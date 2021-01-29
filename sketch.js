@@ -56,7 +56,7 @@ function setup() {
     box34 = new Box(1250, 70, 50, 60)
 
     polygon = new Polygon(200, 400, 100, 100)
-    slingshot = new SlingShot(polygon.body,  {x:200, y:400})
+    slingShot = new SlingShot(polygon.body, {x:200, y:400})
 
  
 }
@@ -121,7 +121,7 @@ function draw() {
     box34.display();
 
     polygon.display();
-    slingshot.display();
+    slingShot.display();
 
  
 
@@ -129,10 +129,10 @@ function draw() {
 
 
 function mouseDragged() {
-Matter.Body.setPosition(Polygon.body, {x:mouseX, y:mouseY})
- }
+    Matter.Body.setPosition(polygon.body, {x:mouseX, y:mouseY})
+}
  
  function mouseReleased() {
-      slingShot.fly();
+    slingShot.fly();
  }
   
