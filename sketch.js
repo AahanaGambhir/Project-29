@@ -67,6 +67,7 @@ function draw() {
     Engine.update(engine);
     ground1.display();
     ground2.display();
+    ground3.display();
     //level 1
     fill(124, 0, 0)
     box1.display();
