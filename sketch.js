@@ -8,8 +8,9 @@ function setup() {
     engine = Engine.create();
     world = engine.world;
 
-    ground1 = new Ground(750, 600, 500, 20)
-    ground2 = new Ground(1250, 300, 400, 20)
+    ground1 = new Ground(750, 790, 1500, 20)
+    ground2 = new Ground(750, 600, 500, 20)
+    ground3 = new Ground(1250, 300, 400, 20)
     //level 1
     box1 = new Box(550, 565, 50, 60)
     box2 = new Box(605, 565, 50, 60)
